@@ -1,1 +1,2 @@
 =LET( dates , SEQUENCE(365,1,TODAY(),1) , FILTER( dates , WEEKDAY(dates,2)<6 ))
+=IFS( SUM(C2:C11)>6000000 , "Exceed target" , SUM(C2:C11)>5000000 , "On target" , SUM(C2:C11)>4000000 , "Below target")
